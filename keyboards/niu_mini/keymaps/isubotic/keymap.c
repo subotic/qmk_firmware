@@ -5,6 +5,8 @@
  * 2. Open QMK Toolbox App
  * 3. Set keyboard in DFU mode: RESET key combination or button on bottom of keyboad
  * 4. Flash created firmware
+ *
+ * Keycodes Table: https://docs.qmk.fm/#/keycodes
  */
 
 #include QMK_KEYBOARD_H
@@ -46,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    _______,
     KC_CAPS, KC_GRV,  _______, _______, _______, KC_TRNS, _______, _______, _______, KC_MINS, KC_EQL,  _______,
     KC_TRNS, KC_COMM, _______, _______, _______, _______, _______, _______, _______, KC_LBRC, KC_RBRC, _______,
-    RESET,   _______, KC_TRNS, _______, KC_TRNS, _______, _______, _______, KC_SCLN, KC_QUOT, KC_BSLS, _______
+    _______, _______, KC_TRNS, _______, KC_TRNS, _______, _______, _______, KC_SCLN, KC_QUOT, KC_BSLS, _______
 	),
 
 	/* Layer 2 (shifted numbers)
